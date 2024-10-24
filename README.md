@@ -24,13 +24,13 @@ Latest ✔	Latest ✔	Latest ✔	Latest ✔	Latest ✔	8+ ✔
 ```
 使用 npm:
 
-$ npm install axios
+$ npm install q-axios
 使用 bower:
 
-$ bower install axios
+$ bower install q-axios
 使用 cdn:
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://q-axios/dist/q-axios.min.js"></script>
 
 ```
 ## 案例
