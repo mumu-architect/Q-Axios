@@ -1,8 +1,8 @@
-export default function (xhr){
-    return {
-        'ok':false,
-        'status':xhr.status,
-        'msg':'error',
-        'data':xhr.response
-    };
+export default function (xhr) {
+  return {
+    ok: false,
+    status: xhr.status,
+    msg: "error",
+    data: xhr.response,
+  };
 }

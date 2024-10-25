@@ -2,19 +2,19 @@
  * 定义全局配置
  */
 export default {
-    baseUrl:'',
-    method: 'get',
-    headers:{
-        common:{
-            'X-Request-By':'XMLHttpRequest'
-        },
-        get:{},
-        post:{}
+  baseUrl: "",
+  method: "get",
+  headers: {
+    common: {
+      "X-Request-By": "XMLHttpRequest",
     },
-    transformRequest(config){
-        return config;
-    },
-    transformResponse(response){
-        return JSON.parse(response);
-    }
-}
+    get: {},
+    post: {},
+  },
+  transformRequest(config) {
+    return config;
+  },
+  transformResponse(response) {
+    return JSON.parse(response);
+  },
+};

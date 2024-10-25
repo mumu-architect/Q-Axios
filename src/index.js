@@ -1,4 +1,4 @@
-import Axios from './axios'
+import Axios from "./axios";
 
 // let axios1 = Axios.create({
 //     baseUrl:'http://www.zhinengshe.com',
@@ -24,8 +24,6 @@ import Axios from './axios'
 // console.log(res);
 //Axios.get('1.json',{headers:{a:12}});
 
-
-
 //2
 // let a= Axios('data/1.json', {});
 // let b= Axios('data/2.json', {});
@@ -46,42 +44,44 @@ import Axios from './axios'
 //     res.aa=999;
 //     return res;
 // });
-(async()=>{
-    Axios('data/1.json', {
-        headers: {
-            'aa': 5
-        },
-        transformRequest(config) {
-            config.headers.c = 55;
-            return config;
-        },
-        transformResponse(res) {
-            return res;
-        }
-    }).then(res=>{
-        console.log(res);
-    }).catch(error=>{
-        console.log(error);
+(async () => {
+  Axios("data/1.json", {
+    headers: {
+      aa: 5,
+    },
+    transformRequest(config) {
+      config.headers.c = 55;
+      return config;
+    },
+    transformResponse(res) {
+      return res;
+    },
+  })
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((error) => {
+      console.log(error);
     });
-    
 })();
 
-(async()=>{
-    Axios('data/2.json', {
-        headers: {
-            'aa': 6
-        },
-        transformRequest(config) {
-            config.headers.c = 66;
-            return config;
-        },
-        transformResponse(res) {
-            return res;
-        }
-    }).then(res=>{
-        console.log(res);
-    }).catch(error=>{
-        console.log(error);
+(async () => {
+  Axios("data/2.json", {
+    headers: {
+      aa: 6,
+    },
+    transformRequest(config) {
+      config.headers.c = 66;
+      return config;
+    },
+    transformResponse(res) {
+      return res;
+    },
+  })
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((error) => {
+      console.log(error);
     });
-
 })();
